@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gas Booking - GASHPBHARAT</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🔥 GASHPBHARAT</h1>
+
+<nav>
+
+<a href="/">Home</a>
+<a href="/hp-gas">HP Gas</a>
+<a href="/bharat-gas">Bharat Gas</a>
+<a href="/booking">Booking</a>
+<a href="/contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<h1>Book Your Gas Cylinder</h1>
+
+<p>Fast & Safe LPG Booking</p>
+
+</section>
+
+
+
+<section class="container">
+
+
+<div class="booking-box">
+
+
+<h2>Customer Booking Form</h2>
+
+
+<form method="POST">
+
+
+<div class="form-group">
+
+<label>Customer Name</label>
+
+<input 
+type="text"
+name="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label>Mobile Number</label>
+
+<input 
+type="tel"
+name="mobile"
+placeholder="Enter mobile number"
+required>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label>Delivery Address</label>
+
+<textarea
+name="address"
+placeholder="Enter full address"
+required></textarea>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label>Select Gas Type</label>
+
+<select name="gas_type" required>
+
+<option value="">Select</option>
+
+<option value="HP Gas">
+HP Gas
+</option>
+
+<option value="Bharat Gas">
+Bharat Gas
+</option>
+
+</select>
+
+</div>
+
+
+
+<button type="submit">
+
+Confirm Booking
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+<footer>
+
+<h3>🔥 GASHPBHARAT</h3>
+
+<p>
+Your Trusted Gas Booking Partner
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
+<form method="POST" action="/booking">
+
+<input name="name" placeholder="Name" required>
+
+<input name="mobile" placeholder="Mobile Number" required>
+
+<input name="address" placeholder="Address" required>
+
+<input name="gas_type" placeholder="Gas Type" required>
+
+<button type="submit">
+Confirm Booking
+</button>
+
+</form>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GASHPBHARAT - Gas Service</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+
+header{
+
+    background:#ff7800;
+    color:white;
+    padding:20px;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+
+nav{
+
+    margin-top:15px;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+    font-size:16px;
+
+}
+
+
+
+.hero{
+
+    background:linear-gradient(135deg,#ff7800,#ffb347);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+
+.hero p{
+
+    margin:15px;
+    font-size:18px;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+    background:white;
+    color:#ff7800;
+    padding:14px 25px;
+    margin:10px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+
+.section{
+
+    padding:30px 20px;
+    text-align:center;
+
+}
+
+
+
+.cards{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #ddd;
+
+}
+
+
+.card h3{
+
+    color:#ff7800;
+    margin-bottom:10px;
+
+}
+
+
+
+.card a{
+
+    text-decoration:none;
+    color:#0066ff;
+    font-weight:bold;
+
+}
+
+
+
+.user{
+
+    background:white;
+    padding:20px;
+    text-align:center;
+
+}
+
+
+
+footer{
+
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:28px;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+🔥 GASHPBHARAT
+</div>
+
+
+<nav>
+
+<a href="/">Home</a>
+
+<a href="/booking">Booking</a>
+
+<a href="/tracking">Tracking</a>
+
+<a href="/services">Services</a>
+
+<a href="/contact">Contact</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<h1>
+Fast & Trusted Gas Service
+</h1>
+
+
+<p>
+Book your cylinder easily with GASHPBHARAT
+</p>
+
+
+<a class="btn" href="/booking">
+Book Gas
+</a>
+
+
+<a class="btn" href="/tracking">
+Track Order
+</a>
+
+
+
+</section>
+
+
+
+
+
+<section class="section">
+
+
+<h2>
+Our Services
+</h2>
+
+
+<br>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🔥 Gas Booking
+</h3>
+
+<p>
+Quick cylinder booking service.
+</p>
+
+<a href="/booking">
+Book Now
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🚚 Order Tracking
+</h3>
+
+<p>
+Check your booking status.
+</p>
+
+<a href="/tracking">
+Track Now
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🛠 Safety Service
+</h3>
+
+<p>
+Gas safety check and support.
+</p>
+
+<a href="/services">
+View Services
+</a>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="section">
+
+
+<h2>
+Gas Partners
+</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>GASHPBHARAT</title>
+</head>
+
+<body>
+
+<h1>GASHPBHARAT Website Running ✅</h1>
+
+<a href="/login">Login</a>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>GASHPBHARAT</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f5f7fb;
+}
+
+
+.header{
+    background:#ff7800;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+
+.container{
+    text-align:center;
+    padding:30px;
+}
+
+
+.card{
+
+    background:white;
+    margin:15px auto;
+    padding:20px;
+    max-width:350px;
+    border-radius:15px;
+    box-shadow:0 5px 15px #ccc;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    background:#ff7800;
+    color:white;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    margin:8px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+<h1>🔥 GASHPBHARAT</h1>
+
+<p>Gas Booking & Service Platform</p>
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+<h2>
+Welcome
+</h2>
+
+<p>
+Book your gas cylinder easily.
+</p>
+
+
+<a class="btn" href="/booking">
+Book Gas
+</a>
+
+
+<a class="btn" href="/login">
+Login
+</a>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Our Services
+</h3>
+
+<a href="/tracking">
+Track Booking
+</a>
+
+<br><br>
+
+<a href="/services">
+Services
+</a>
+
+<br><br>
+
+<a href="/contact">
+Contact
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

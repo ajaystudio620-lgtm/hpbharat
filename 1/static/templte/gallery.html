@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery - GASHPBHARAT</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🔥 GASHPBHARAT</h1>
+
+<nav>
+<a href="/">Home</a>
+<a href="/hp-gas">HP Gas</a>
+<a href="/bharat-gas">Bharat Gas</a>
+<a href="/booking">Booking</a>
+<a href="/services">Services</a>
+<a href="/gallery">Gallery</a>
+<a href="/contact">Contact</a>
+<a href="/login">Login</a>
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<h1>Our Gallery</h1>
+
+<p>
+See our services and gas delivery moments.
+</p>
+
+</section>
+
+
+
+<section class="container">
+
+
+<h2>Service Images</h2>
+
+
+<div class="gallery">
+
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/hp-gas.png') }}" 
+alt="HP Gas">
+
+<h3>HP Gas Service</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/bharat-gas.png') }}" 
+alt="Bharat Gas">
+
+<h3>Bharat Gas Service</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/delivery-boy.png') }}" 
+alt="Delivery">
+
+<h3>Fast Delivery</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/safety.png') }}" 
+alt="Safety">
+
+<h3>Safety Service</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/shop.jpg') }}" 
+alt="Shop">
+
+<h3>Our Shop</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/support.png') }}" 
+alt="Support">
+
+<h3>Customer Support</h3>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<section class="container">
+
+<h2>Our Commitment</h2>
+
+<p>
+We provide safe, reliable and customer-friendly gas services.
+</p>
+
+</section>
+
+
+
+<footer>
+
+<h3>🔥 GASHPBHARAT</h3>
+
+<p>
+Your Trusted Gas Booking Partner
+</p>
+
+<p>
+© 2026 GASHPBHARAT. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Booking Successful - GASHPBHARAT</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f4f7fb;
+}
+
+
+.box{
+
+    width:90%;
+    max-width:450px;
+    margin:60px auto;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 5px 20px #ccc;
+
+}
+
+
+h1{
+
+    color:green;
+
+}
+
+
+.number{
+
+    background:#ff7800;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    font-size:22px;
+
+}
+
+
+button{
+
+    background:#ff7800;
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:25px;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+
+<h1>
+✅ Booking Successful
+</h1>
+
+
+<p>
+Thank you {{name}}
+</p>
+
+
+<h3>
+Your Booking Number
+</h3>
+
+
+<div class="number">
+
+{{booking_number}}
+
+</div>
+
+
+<p>
+Mobile: {{mobile}}
+</p>
+
+
+<p>
+Gas Type: {{gas_type}}
+</p>
+
+
+<p>
+Address: {{address}}
+</p>
+
+
+<a href="/tracking">
+
+<button>
+Track Booking
+</button>
+
+</a>
+
+
+</div>
+
+
+</body>
+
+</html>

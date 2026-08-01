@@ -1,0 +1,1423 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f5f7fb;
+    color:#222;
+
+}
+
+
+/* Header */
+
+.header{
+
+    background:linear-gradient(135deg,#ff7800,#ffb347);
+    color:white;
+    padding:20px;
+    text-align:center;
+
+}
+
+
+.header h1{
+
+    font-size:32px;
+
+}
+
+
+
+/* Buttons */
+
+.btn,
+button{
+
+    display:inline-block;
+    background:#ff7800;
+    color:white;
+    border:none;
+    padding:13px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+
+.btn:hover,
+button:hover{
+
+    background:#e56700;
+
+}
+
+
+
+/* Cards */
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    margin:15px;
+
+}
+
+
+.card h2,
+.card h3{
+
+    color:#ff7800;
+
+}
+
+
+
+/* Form */
+
+input,
+select{
+
+    width:100%;
+    padding:13px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ddd;
+
+}
+
+
+form{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .header h1{
+
+        font-size:25px;
+
+    }
+
+
+    .card{
+
+        margin:10px;
+
+    }
+
+}/* =====================================================
+   GASHPBHARAT PREMIUM UI SYSTEM
+   ADVANCED CSS PART 1
+===================================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+
+    --primary:#ff7a00;
+    --secondary:#003b73;
+    --dark:#00152e;
+    --light:#f5f8ff;
+    --white:#ffffff;
+    --shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:#222;
+    overflow-x:hidden;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+header{
+
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:9999;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(0,21,46,.95),
+    rgba(0,59,115,.95)
+    );
+
+    backdrop-filter:blur(20px);
+
+    padding:18px 6%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.25);
+
+}
+
+
+
+header h1{
+
+    font-size:32px;
+    font-weight:900;
+
+    background:
+    linear-gradient(
+    45deg,
+    #ff7a00,
+    #ffd000
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+}
+
+
+
+/* NAVIGATION */
+
+
+nav{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:600;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    transition:.4s;
+
+}
+
+
+
+nav a:hover{
+
+    background:#ff7a00;
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+    min-height:650px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+
+    linear-gradient(
+    rgba(0,15,40,.75),
+    rgba(0,15,40,.75)
+    ),
+
+    url("../images/hero-banner.jpg");
+
+
+    background-size:cover;
+    background-position:center;
+
+
+}
+
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#ff7a00;
+
+    border-radius:50%;
+
+    filter:blur(150px);
+
+    opacity:.3;
+
+}
+
+
+
+.hero div{
+
+    position:relative;
+    z-index:2;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:900;
+
+    color:white;
+
+    text-shadow:
+    0 10px 30px black;
+
+}
+
+
+
+.hero h1 span{
+
+    color:#ff9800;
+
+}
+
+
+
+.hero p{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-top:20px;
+
+}
+
+
+
+/* ================= CONTAINER ================= */
+
+
+.container{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:60px auto;
+
+}
+
+
+
+/* ================= SECTION TITLE ================= */
+
+
+.container h2{
+
+    text-align:center;
+
+    color:#003b73;
+
+    font-size:38px;
+
+    font-weight:800;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.container h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:100px;
+
+    height:5px;
+
+    background:#ff7a00;
+
+    margin:15px auto;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ================= PREMIUM CARD ================= */
+
+
+.card{
+
+    background:
+
+    rgba(255,255,255,.9);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    margin:25px 0;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid rgba(255,255,255,.5);
+
+    transition:.5s;
+
+}
+
+
+
+.card:hover{
+
+    transform:
+    translateY(-15px)
+    scale(1.02);
+
+}
+
+
+
+.card h3{
+
+    color:#ff7a00;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ================= BUTTON ================= */
+
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    background:
+
+    linear-gradient(
+    45deg,
+    #ff6500,
+    #ffc400
+    );
+
+
+    box-shadow:
+
+    0 10px 30px rgba(255,120,0,.4);
+
+
+    transition:.4s;
+
+}
+
+
+
+button:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.08);
+
+}
+
+
+
+/* ================= IMAGE ================= */
+
+
+img{
+
+    max-width:100%;
+
+    border-radius:25px;
+
+    transition:.5s;
+
+}
+
+
+
+img:hover{
+
+    transform:scale(1.05);
+
+}
+/* =====================================================
+   GASHPBHARAT PREMIUM UI
+   PART 2 - SERVICES, BOOKING, LOGIN
+===================================================== */
+
+
+/* ================= GAS SERVICE CARDS ================= */
+
+
+.gas-section{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.gas-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.5s;
+
+}
+
+
+
+.gas-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100px;
+
+    right:-100px;
+
+    width:220px;
+
+    height:220px;
+
+    background:#ff8500;
+
+    border-radius:50%;
+
+    opacity:.15;
+
+}
+
+
+
+.gas-card:hover{
+
+    transform:translateY(-15px);
+
+}
+
+
+
+.gas-card img{
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.gas-card h3{
+
+    color:#003b73;
+
+    font-size:26px;
+
+}
+
+
+
+.gas-card p{
+
+    color:#555;
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+/* ================= BOOKING PAGE ================= */
+
+
+.booking-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:35px;
+
+    max-width:800px;
+
+    margin:auto;
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.15);
+
+}
+
+
+
+.booking-box h2{
+
+    color:#ff7800;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.form-group label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#003b73;
+
+}
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:15px;
+
+    border:2px solid #eee;
+
+    transition:.3s;
+
+}
+
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#ff7800;
+
+    box-shadow:
+    0 0 15px rgba(255,120,0,.25);
+
+}
+
+
+
+/* ================= LOGIN REGISTER ================= */
+
+
+.auth-container{
+
+    min-height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.auth-box{
+
+    width:450px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:35px;
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.18);
+
+}
+
+
+
+.auth-box h2{
+
+    text-align:center;
+
+    color:#003b73;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.auth-box input{
+
+    background:#f8faff;
+
+}
+
+
+
+.auth-box button{
+
+    width:100%;
+
+}
+
+
+
+/* ================= SERVICE SECTION ================= */
+
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.service-card{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #003b73,
+    #00152e
+    );
+
+
+    color:white;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+.service-card h3{
+
+    color:#ffb000;
+
+    font-size:25px;
+
+}
+
+
+
+.service-card p{
+
+    margin-top:15px;
+
+}
+
+
+
+
+
+/* ================= TRACKING ================= */
+
+
+.track-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.track-status{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+
+
+.status{
+
+    width:30%;
+
+    text-align:center;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:#f2f5fb;
+
+}
+
+
+
+.status.active{
+
+    background:#ff7800;
+
+    color:white;
+
+}
+
+
+
+/* ================= PAYMENT ================= */
+
+
+.payment-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+
+
+.payment-option{
+
+    padding:18px;
+
+    margin:15px 0;
+
+    border-radius:15px;
+
+    border:2px solid #eee;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.payment-option:hover{
+
+    border-color:#ff7800;
+
+    background:#fff7ed;
+
+}
+
+
+
+
+
+/* ================= OFFER CARD ================= */
+
+
+.offer-card{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #ff7800,
+    #ffb300
+    );
+
+
+    color:white;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(255,120,0,.3);
+
+}
+
+
+
+.offer-card h3{
+
+    font-size:30px;
+
+}
+
+
+
+.offer-card p{
+
+    margin:15px 0;
+
+}
+/* =====================================
+   PREMIUM FOOTER DESIGN
+===================================== */
+
+
+footer{
+
+    background:
+    linear-gradient(
+    135deg,
+    #00152e,
+    #003b73
+    );
+
+    color:white;
+
+    padding:60px 6% 20px;
+
+    margin-top:70px;
+
+}
+
+
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+
+}
+
+
+
+.footer-box h3{
+
+    color:#ff9800;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-box h4{
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.footer-box p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+
+
+.footer-box a{
+
+    display:block;
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    margin:10px 0;
+
+    transition:.3s;
+
+}
+
+
+
+.footer-box a:hover{
+
+    color:#ff9800;
+
+    padding-left:8px;
+
+}
+
+
+
+/* SOCIAL BUTTONS */
+
+
+.social-icons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ff7800;
+
+    color:white;
+
+    border-radius:50%;
+
+    font-weight:bold;
+
+}
+
+
+
+.social-icons a:hover{
+
+    transform:translateY(-5px);
+
+    background:#ffb300;
+
+}
+
+
+
+/* FOOTER BOTTOM */
+
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#ccc;
+
+}
+
+
+
+.footer-bottom span{
+
+    color:#ff9800;
+
+    font-weight:700;
+
+}
+
+
+
+/* MOBILE FOOTER */
+
+
+@media(max-width:768px){
+
+.footer-container{
+
+    text-align:center;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+}
+/* =====================================
+   PREMIUM FONT STYLE
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    letter-spacing: 0.3px;
+
+}
+
+
+
+/* Main Heading */
+
+h1{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* Section Heading */
+
+h2{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:800;
+
+    letter-spacing:.8px;
+
+}
+
+
+
+/* Card Heading */
+
+h3{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:700;
+
+}
+
+
+
+/* Paragraph Text */
+
+p{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:400;
+
+    line-height:1.7;
+
+}
+
+
+
+/* Buttons */
+
+button{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+/* Navigation */
+
+nav a{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:600;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f5f7fb;
+    color:#222;
+
+}
+
+
+/* Header */
+
+.header{
+
+    background:linear-gradient(135deg,#ff7800,#ffb347);
+    color:white;
+    padding:20px;
+    text-align:center;
+
+}
+
+
+.header h1{
+
+    font-size:32px;
+
+}
+
+
+
+/* Buttons */
+
+.btn,
+button{
+
+    display:inline-block;
+    background:#ff7800;
+    color:white;
+    border:none;
+    padding:13px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+
+.btn:hover,
+button:hover{
+
+    background:#e56700;
+
+}
+
+
+
+/* Cards */
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    margin:15px;
+
+}
+
+
+.card h2,
+.card h3{
+
+    color:#ff7800;
+
+}
+
+
+
+/* Form */
+
+input,
+select{
+
+    width:100%;
+    padding:13px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ddd;
+
+}
+
+
+form{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .header h1{
+
+        font-size:25px;
+
+    }
+
+
+    .card{
+
+        margin:10px;
+
+    }
+
+}
